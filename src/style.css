@@ -263,7 +263,6 @@
 
 
 
-
 /* Hero Section */
 .hero-section {
   padding: 80px 20px;
@@ -300,7 +299,8 @@
   max-width: 600px;
   color: #b0b0b0;
 }
-/* Resume Button with Project Section Hover Style */
+
+/* Resume Button */
 .btn-resume {
   position: relative;
   display: inline-block;
@@ -317,7 +317,6 @@
   text-decoration: none;
 }
 
-/* Glow Effect Overlay */
 .btn-resume::before {
   content: "";
   position: absolute;
@@ -332,7 +331,6 @@
   z-index: 1;
 }
 
-/* Shiny Light Sweep */
 .btn-resume::after {
   content: "";
   position: absolute;
@@ -345,7 +343,6 @@
   z-index: 1;
 }
 
-/* Hover State */
 .btn-resume:hover::before {
   opacity: 1;
 }
@@ -359,13 +356,11 @@
   color: white;
 }
 
-/* Click Effect */
 .btn-resume:active {
   transform: scale(0.96);
 }
 
-
-/* Image */
+/* Hero Image */
 .hero-image {
   flex: 1;
   display: flex;
@@ -382,12 +377,88 @@
   box-shadow: 0 0 15px rgba(155, 94, 255, 0.6);
 }
 
-/* Hover Effect */
 .hero-image img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 0px rgba(155, 94, 255, 0.9);
 }
 
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .hero-image img {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn-resume {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .btn-resume {
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .hero-image img {
+    width: 160px;
+    height: 160px;
+  }
+}
 
 
 

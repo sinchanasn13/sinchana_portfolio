@@ -10,7 +10,6 @@ export default function Hero() {
         {/* Text on the left */}
         <div className="hero-text">
           <h1>Hi, I'm Sinchana SN</h1>
-          <h2>I'm a Web Developer</h2>
           <p>
             As a fresher, I'm eager to contribute to innovative projects,
             continuously learn new tools and frameworks, and grow into a
