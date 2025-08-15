@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0A192F; /* Primary dark blue */
+  color: #CCD6F6; /* Light text */
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #64FFDA; /* Accent teal */
+}
+
+section {
+  scroll-margin-top: 80px;
+}

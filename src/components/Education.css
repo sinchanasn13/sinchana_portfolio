@@ -1,0 +1,170 @@
+/* ===== Education Section ===== */
+.education-section {
+  padding: 80px 20px;
+  background: transparent;
+  color: var(--text-light);
+  position: relative;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #a855f7, #ec4899);
+  margin: 0 auto 25px;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Timeline line */
+.edu-grid {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.edu-grid::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #a855f7, #ec4899);
+  border-radius: 2px;
+}
+
+/* Timeline Cards */
+.edu-card {
+  background: linear-gradient(145deg, rgba(31, 41, 55, 0.85), rgba(17, 24, 39, 0.85));
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 16px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 45%;
+  position: relative;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.6);
+}
+
+/* Left & Right positioning */
+.edu-card:nth-child(odd) {
+  left: 0;
+}
+
+.edu-card:nth-child(even) {
+  left: 55%;
+}
+
+/* Timeline Dots */
+.edu-card::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(145deg, #a855f7, #ec4899);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.8);
+  transition: transform 0.3s ease;
+}
+
+.edu-card:nth-child(odd)::before {
+  right: -33px;
+}
+
+.edu-card:nth-child(even)::before {
+  left: -33px;
+}
+
+.edu-card:hover::before {
+  transform: scale(1.3);
+}
+
+/* Header Layout */
+.edu-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.edu-logo {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(168, 85, 247, 0.5);
+  background-color: #111827;
+}
+
+/* Text Styles */
+.edu-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--text-light);
+}
+
+.edu-school {
+  font-size: 0.95rem;
+  color: var(--primary-light);
+}
+
+.edu-location {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.edu-year {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.edu-score {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 5px;
+  color: var(--primary);
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+  .edu-grid::before {
+    left: 8px;
+  }
+  
+  .edu-card {
+    width: 100%;
+    left: 0 !important;
+    margin-left: 25px;
+  }
+  
+  .edu-card::before {
+    left: -25px !important;
+    right: auto;
+  }
+}
