@@ -8,7 +8,7 @@ export default function Projects() {
       description: "A movie streaming app inspired by Netflix, built using React and TMDB API for movie data.",
      
       github: "https://github.com/sinchanasn13/Netflix_clone",
-      live: "https://netflixclone-omega-azure.vercel.app/"
+      live: "https://netflix-clone-ero9.vercel.app/"
     },
     {
       title: "Gemini Clone",
